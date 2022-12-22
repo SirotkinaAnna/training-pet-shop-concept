@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href=" https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Document</title>
+    <style>
+        :root {
+            --myGray: #adb5bd;
+        }
+
+        html {
+            box-sizing: border-box;
+        }
+
+        /* div {
+    border: 1px solid black;
+} */
+
+        body {
+
+            background-color: #ffb703;
+            width: 100%;
+            color: #6c757d;
+
+        }
+
+        .textend {
+            display: flex;
+            justify-content: end;
+        }
+
+        .quotetext {
+            width: 50%;
+            font-size: large;
+        }
+
+        #main b {
+            color: white;
+        }
+
+        nav {
+            width: 100%;
+            margin: 0px;
+            box-sizing: border-box;
+            height: 100%;
+            color: #adb5bd;
+            background-color: white;
+            padding: 0px;
+        }
+
+        .firstdiv {
+            width: 100%;
+        }
+
+        .anotherColor {
+            background-color: #ff0054;
+            color: #800f2f;
+            font-weight: 600;
+        }
+
+        #main {
+            height: 100%;
+            margin: 0px;
+        }
+
+        .dogImg {
+            width: 75%;
+            border-radius: 20%;
+        }
+
+        .products {
+            width: 100%;
+            background-color: white;
+
+        }
+
+        .bottom-left a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #carouselExampleIndicators {
+            padding-top: 20px;
+            padding-right: 0px;
+            height: fit-content;
+            background-color: white;
+            color: #6c757d;
+        }
+
+
+        #calltoAction {
+            background-color: #00bbf9;
+            display: flex;
+            color: white;
+            font-weight: 700;
+
+
+        }
+
+        .calltoAction {
+            padding: 10px 20px;
+            margin: 0px;
+            border-radius: 10px;
+            color: #00bbf9;
+            font-weight: 700;
+        }
+
+        .calltoAction:hover {
+            background-color: #00bbf9;
+            color: white;
+        }
+
+
+
+        .newsSection img {
+            width: 100%;
+            max-width: 100%;
+
+            height: 100%;
+        }
+
+        .bottom-left {
+            position: absolute;
+            color: white;
+            font-weight: 600;
+            bottom: 30px;
+            left: 16px;
+        }
+
+        .test {
+            position: relative;
+        }
+
+        .mediaflex {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .newsSection div {
+            box-sizing: border-box;
+        }
+
+        .g-col-6:first-of-type {
+            height: 50%;
+        }
+
+
+        .carousel-control-prev,
+        .carousel-control-next,
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            background-color: #ff0054;
+            color: #6c757d;
+            border: 0;
+        }
+
+        .card img {
+            border-radius: 50%;
+            border: 5px solid #adb5bd;
+            width: 100%;
+            height: 100%;
+        }
+
+        .card {
+            width: 50%;
+        }
+
+
+        .card,
+        .card-body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .carousel-inner {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .carousel-control-next-icon {
+            color: #6c757d;
+        }
+
+        .first {
+            height: 100%
+        }
+
+        .firstImg {
+            height: 100%;
+        }
+
+
+        #carouselExampleControl .carousel-item {
+            width: 60%;
+            margin: auto;
+            height: 100%;
+
+        }
+
+        nav .btn {
+            border-radius: 0%;
+            border: none;
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+            padding-bottom: 0.75rem;
+            height: 100%;
+
+        }
+
+        .btn-secondary {
+            background-color: var(--myGray);
+        }
+
+        .col-md-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+            margin-top: auto;
+
+        }
+
+        .col-md-2 div {
+            width: 60%;
+            height: 40%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-flow: column;
+            margin-top: auto;
+        }
+
+        nav {
+
+            color: var(--myGray);
+            font-weight: 500;
+
+
+        }
+
+        nav a {
+            padding-left: 10px;
+            padding-right: 10px;
+            color: var(--myGray);
+        }
+
+        nav p {
+            font-size: small;
+            padding-top: 6px;
+            padding-bottom: 0px;
+        }
+
+        #main a {
+            padding-top: 40px;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #6c757d;
+            font-size: large;
+        }
+
+        .rainbow a {
+
+            color: #495057;
+            font-weight: 600;
+            font-size: larger;
+        }
+
+        .rainbow a:hover {
+            color: white;
+        }
+
+        @media(max-width:768px) {
+            #main a {
+
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: medium;
+            }
+
+            .col-md-2 {
+                width: calc(100%/3);
+            }
+
+            .mediaflex {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="">
+        <div class="container-fluid">
+            <div class="row justify-content-end">
+                <div class="col-lg-8 d-flex align-items-center ">
+                    <p class="px-3"><b>OPENING TIMES</b> Mon-Fri: <b>8.30am-5.30pm</b> Sat: <b>9am-5am</b> Sun:
+                        <b>10am-4pm</b>
+                    </p>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-end align-items-center px-0">
+                    <a class="" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path
+                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg>012345 6789 </a>
+                    <a class="" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                        </svg>
+                        Email us</a>
+                    <a class="" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a class=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <div class="btn-group">
+                        <a href="https://google.com" class="btn btn-secondary"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg></a>
+                        <a href="#main" class="btn btn-danger active" aria-current="page">Partner
+                            login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="container-fluid" id="main">
+        <div class="row">
+            <div class="col-lg-6 d-flex justify-content-center align-items-center py-5 order-2 order-md-1 ">
+                <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/702/original/photo_2022-11-26_17-56-26.jpg?1669741284"
+                    class="img-fluid dogImg">
+            </div>
+            <div class="col col-lg-6 order-1 order-md-2">
+                <div class="container textend mt-3">
+                    <p class="">
+                        <a href="#main">Home</a>
+                        <a href="#rainbow">About</a>
+                        <!-- <a href="#offers">Offers</a> -->
+                        <a href="#news">News</a>
+                        <a href="#contacts">Contacts</a>
+                    </p>
+                </div>
+                <div class="h-75 d-flex justify-content-center align-items-center mt-3">
+                    <p class="quotetext">“An animal's eyes have the power to speak a great language.”
+                        ― <b>Martin Buber</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid rainbow " id="rainbow">
+        <div class="row d-flex">
+            <div class="col-md-2">
+                <div><img
+                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/033/original/dog.png?1671141507"
+                        class=""></div>
+                <p><a href="https://en.wikipedia.org/wiki/Dog">Dogs</a></p>
+            </div>
+            <div class="col-md-2">
+                <div><img
+                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/034/original/cat-box.png?1671141513">
+                </div>
+                <p><a href="https://en.wikipedia.org/wiki/Cat">Cats</a></p>
+            </div>
+            <div class="col-md-2">
+                <div><img
+                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/040/original/parrot.png?1671141562">
+                </div>
+                <p><a href="https://en.wikipedia.org/wiki/Parrot">Parrots</a></p>
+            </div>
+            <div class="col-md-2">
+                <div><img
+                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/035/original/fish.png?1671141520">
+                </div>
+                <p><a href="https://en.wikipedia.org/wiki/Fish">Fishes</a></p>
+            </div>
+            <div class="col-md-2">
+                <div><img
+                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/042/original/rabbit.png?1671141602">
+                </div>
+                <p><a href="https://en.wikipedia.org/wiki/Rabbit">Rabbits</a></p>
+            </div>
+            <div class="col-md-2">
+                <div><img
+                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/038/original/horse.png?1671141545">
+                </div>
+                <p><a href="https://en.wikipedia.org/wiki/Horse">Horses</a></p>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="calltoAction" class="container-fluid  justify-content-center align-items-center">
+        <h2 class="text-center py-4 px-4">Call to action here</h2>
+        <a href="" class="btn btn-light calltoAction">Learn More</a>
+    </div>
+
+    <div class="container-fluid newsSection" id="news">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-6 px-0 ">
+
+                        <div class="w-100 h-50 text-center py-4">
+                            <h3>22 September</h3>
+                            <h2>There is topic</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem aliquid molestias
+                                modi
+                                et neque nobis inventore, nemo voluptate omnis excepturi exercitationem! Deleniti
+                                fugit
+                                aspernatur quaerat natus maiores blanditiis vel fugiat?</p>
+                        </div>
+                        <div class="w-100 h-50"> <img
+                                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/037/original/boris-smokrovic-RLLR0oRz16Y-unsplash.jpg?1671141536"
+                                class="img-fluid">
+                            <div class="bottom-left">
+                                <p>News title goes here</p>
+                                <p><a href="https://canadiangeographic.ca/?s=Topic:%20Wildlife">Learn More</a></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 px-0"><img
+                            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/036/original/andrew-pons-lylCw4zcA7I-unsplash.jpg?1671141528"
+                            class="img-fluid">
+                        <div class="bottom-left">
+                            <p>News title goes here</p>
+                            <p><a href="https://canadiangeographic.ca/?s=Topic:%20Wildlife">Learn More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 px-0 anotherColor">
+                <div class="grid" style="row-gap: 0;">
+                    <div class="g-col-6 mediaflex">
+                        <div class="w-100 test">
+                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/039/original/jaroslaw-slodkiewicz-SDIIfq6nhFU-unsplash.jpg?1671141554"
+                                class="img-fluid h-100">
+                            <div class="bottom-left">
+                                <p>News title goes here</p>
+                                <p><a href="https://canadiangeographic.ca/?s=Topic:%20Wildlife">Learn More</a></p>
+                            </div>
+                        </div>
+                        <div class="w-100 test">
+                            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/059/043/original/wexor-tmg-L-2p8fapOA8-unsplash.jpg?1671141610"
+                                class="img-fluid h-100">
+                            <div class="bottom-left">
+                                <p>News title goes here</p>
+                                <p><a href="https://canadiangeographic.ca/?s=Topic:%20Wildlife">Learn More</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="g-col-6 anotherColor">
+                    <div id="carouselExampleControl" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <p class="fs-2 mt-3">&ldquo;Such short little lives our pets have to spend
+                                    with us, and
+                                    they spend most
+                                    of it waiting for us to come home each day.
+                                    It is amazing how much love and laughter they bring into our lives and even how
+                                    much closer we become with each other because of them.&ldquo;
+                                    ― <b>John grogan, Marley and Me: Life and Love With the World's Worst Dog</b>
+                                </p>
+
+                            </div>
+                            <div class="carousel-item">
+
+                                <p class="fs-5 mt-5 py-4">&ldquo;If animals could speak, the dog would be a blundering
+                                    outspoken
+                                    fellow; but the cat would have the rare grace of never saying a word too
+                                    much.&ldquo;
+                                    ― <b>Mark Twain</b>
+                                </p>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="mt-3">&ldquo;I think I could turn and live with animals, they are so placid
+                                    and
+                                    self-contain’d, I stand and look at them long and long.
+
+                                    They do not sweat and whine about their condition, They do not lie awake in the
+                                    dark and weep for their sins, They do not make me sick discussing their duty to
+                                    God, Not one is dissatisfied, not one is demented with the mania of owning
+                                    things, Not one kneels to another, nor to his kind that lived thousands of years
+                                    ago, Not one is respectable or unhappy over the whole earth.&ldquo;
+                                    ― <b> Walt Whitman, Leaves of Grass: The Death-Bed Edition</b>
+                                </p>
+
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControl"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControl"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+    <footer id="contacts">
+        <div class="container-fluid bg-light py-5">
+            <div class="row">
+                <div class="col-md-4 order-2 order-md-1">
+                    <a class="" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path
+                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg>012345 6789 </a>
+                    <a class="" href="https://gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                        </svg>
+                        Email us</a>
+                    <a class="" href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a class="" href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <p>Coded by Anna Sirotkina</p>
+                </div>
+                <div class="col-md-8 order-1 order-md-2">
+                    <form action="#main">
+
+                        <Label for="email" class="form-label px-3"><b>Sign up for our newsletter</b></Label>
+                        <div class="input-group py-4 px-3">
+                            <input type="email" class="form-control w-75" placeholder="Input email" id="email"
+                                name="email" required>
+                            <button class="btn btn-danger">Sign up</button>
+                        </div>
+                    </form>
+                    <p class="px-3"><b>OPENING TIMES</b> Mon-Fri: <b>8.30am-5.30pm</b> Sat: <b>9am-5am</b> Sun:
+                        <b>10am-4pm</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>const rainbow = document.querySelectorAll("div.col-md-2");
+        const colorRainbow = ["#43aa8b", "#06d6a0", "#4cc9f0", "#4361ee", "#7209b7", "#ff4d6d"];
+
+        for (let i = 0; i < colorRainbow.length; i++) {
+            rainbow[i].style.backgroundColor = colorRainbow[i];
+        }
+        for (color of rainbow) {
+            color.style.height = "300px";
+
+        }
+        const form = document.querySelector("form");
+        form.addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            alert("For training purposes, entered data was not sended anywhere");
+
+        })</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
